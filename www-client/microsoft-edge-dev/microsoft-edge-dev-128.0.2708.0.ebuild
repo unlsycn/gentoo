@@ -92,7 +92,8 @@ src_install() {
 
 	rm -f _gpgorigin || die
 
-	rm -r etc usr/share/menu || die
+	rm -r etc usr/share/menu usr/share/appdata || die
+
 	mv usr/share/doc/${MY_PN} usr/share/doc/${PF} || die
 
 	gzip -d usr/share/doc/${PF}/changelog.gz || die
